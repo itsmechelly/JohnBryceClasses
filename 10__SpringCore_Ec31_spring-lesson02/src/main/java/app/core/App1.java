@@ -10,7 +10,7 @@ public class App1 {
 
 		try (AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(Config.class);) {
 			System.out.println("Spring container is up");
-			// ============================================
+			// =======.=====================================
 
 			System.out.println("Hello");
 			School sc1 = ctx.getBean("school1", School.class);

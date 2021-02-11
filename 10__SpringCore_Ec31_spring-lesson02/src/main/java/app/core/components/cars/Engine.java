@@ -1,5 +1,7 @@
 package app.core.components.cars;
 
-public class Engine {
+public interface Engine {
+
+	void start();
 
 }

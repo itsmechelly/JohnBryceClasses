@@ -1,5 +1,9 @@
 package app.core.components.cars;
 
-public class Gear {
+public interface Gear {
+
+	int shiftUp();
+
+	int shiftDown();
 
 }

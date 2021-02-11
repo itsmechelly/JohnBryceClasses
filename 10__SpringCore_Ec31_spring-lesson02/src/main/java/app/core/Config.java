@@ -6,6 +6,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
 import app.core.components.School;
+import app.core.components.cars.Car;
+import app.core.components.cars.PremiumGear;
+import app.core.components.cars.TurboEngine;
 
 @Configuration
 @ComponentScan
@@ -31,4 +34,10 @@ public class Config {
 		return r;
 	}
 
+	//@Bean
+	public Car specialCar() {
+		// CTOR is invoked by client us
+		Car car = new Car(new TurboEngine(), new PremiumGear());
+		return car;
+	}
 }

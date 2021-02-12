@@ -6,12 +6,14 @@
 	<artifactId>10__SpringCore_Ec32_spring-lesson03</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
+
 	<properties>
 		<maven.compiler.target>11</maven.compiler.target>
 		<maven.compiler.source>11</maven.compiler.source>
 	</properties>
 
 	<dependencies>
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
@@ -30,10 +32,19 @@
 			<version>5.3.3</version>
 		</dependency>
 
+		<!-- annotations outside of Spring -->
 		<dependency>
 			<groupId>javax.annotation</groupId>
 			<artifactId>javax.annotation-api</artifactId>
 			<version>1.3.2</version>
+		</dependency>
+
+		<!-- Project Lombok -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.18</version>
+			<scope>provided</scope>
 		</dependency>
 
 	</dependencies>

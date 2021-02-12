@@ -2,18 +2,19 @@ package app.core;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class App1 {
+import app.core.beans.a.injectors.circular.BeanA;
+
+public class App2 {
 
 	public static void main(String[] args) {
 
 		try (AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(Config.class);) {
-			String[] beans = ctx.getBeanDefinitionNames();
-			for (String beanName : beans) {
-				System.out.println(beanName);
-			}
-//			MyBean bean = ctx.getBean(MyBean.class);
-//			System.out.println(bean);
 
+			BeanA a = ctx.getBean(BeanA.class);
+			System.out.println(a);
+
+		} catch (Exception e) {
+			System.out.println("error");
 		}
 
 	}

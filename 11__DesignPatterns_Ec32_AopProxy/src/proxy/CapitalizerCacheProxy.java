@@ -17,6 +17,7 @@ public class CapitalizerCacheProxy implements Capitalizer {
 		}
 		// if that text is not in cache - process.
 		value = capitlizer.modify(text);
+		System.out.println("-----------------processing text");
 		// save in cache for next time.
 		cache.put(text, value);
 		return value;

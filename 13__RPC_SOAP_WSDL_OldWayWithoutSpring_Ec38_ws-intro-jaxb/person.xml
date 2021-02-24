@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<person xmlns="http://www.example.org/person">
-	<id>102</id>
-	<name>Dana</name>
-	<age>27</age>
-</person>

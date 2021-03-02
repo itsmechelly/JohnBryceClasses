@@ -29,7 +29,6 @@ public class App1 {
 
 			// use ObjectMapper to do JSON binding
 			ObjectMapper mapper = new ObjectMapper();
-
 			// convert JSON to Employee Object
 			Employee e = mapper.readValue(json, Employee.class);
 			System.out.println(e);
